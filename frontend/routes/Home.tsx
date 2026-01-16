@@ -63,6 +63,11 @@ export function Home() {
             alt="Cloudflare"
             style={styles.techLogoWide}
           />
+          <img
+            src="https://alchemy.run/_astro/alchemy-logo-light.BAkZH2YP.svg"
+            alt="Alchemy"
+            style={styles.techLogoWide}
+          />
         </div>
       </main>
     </div>

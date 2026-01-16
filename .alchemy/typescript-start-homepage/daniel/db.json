@@ -1,0 +1,41 @@
+{
+  "kind": "cloudflare::D1Database",
+  "id": "db",
+  "fqn": "typescript-start-homepage/daniel/db",
+  "seq": 0,
+  "data": {},
+  "status": "created",
+  "output": {
+    "Symbol(alchemy::ResourceKind)": "cloudflare::D1Database",
+    "Symbol(alchemy::ResourceID)": "db",
+    "Symbol(alchemy::ResourceFQN)": "typescript-start-homepage/daniel/db",
+    "Symbol(alchemy::ResourceScope)": {
+      "@scope": null
+    },
+    "Symbol(alchemy::ResourceSeq)": 0,
+    "type": "d1",
+    "id": "0776faf0-b4f8-45c2-b4d0-d4de84b25800",
+    "name": "typescript-start-homepage-db-daniel",
+    "dev": {
+      "id": "typescript-start-homepage-db-daniel",
+      "remote": false
+    },
+    "migrationsDir": "/Users/daniel/dev/personal/typescript-start-homepage/infra/migrations",
+    "migrationsTable": "d1_migrations",
+    "jurisdiction": "default"
+  },
+  "props": {
+    "adopt": true,
+    "migrationsDir": "/Users/daniel/dev/personal/typescript-start-homepage/infra/migrations",
+    "migrationsFiles": [
+      {
+        "id": "0000_minor_ben_urich.sql",
+        "hash": "e9d297ca26c5ffce378585774d56f71e6b44d2311722d06b5a33c8a326dc6fab"
+      }
+    ],
+    "importFiles": [],
+    "dev": {
+      "force": false
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "cloudflare::CustomDomain",
+  "id": "typescript-start.danield9tqh.com",
+  "fqn": "typescript-start-homepage/daniel/worker/typescript-start.danield9tqh.com",
+  "seq": 0,
+  "data": {},
+  "status": "created",
+  "output": {
+    "Symbol(alchemy::ResourceKind)": "cloudflare::CustomDomain",
+    "Symbol(alchemy::ResourceID)": "typescript-start.danield9tqh.com",
+    "Symbol(alchemy::ResourceFQN)": "typescript-start-homepage/daniel/worker/typescript-start.danield9tqh.com",
+    "Symbol(alchemy::ResourceScope)": {
+      "@scope": null
+    },
+    "Symbol(alchemy::ResourceSeq)": 0,
+    "name": "typescript-start.danield9tqh.com",
+    "zoneId": "1f8feb2a1b158bd974b98d8943f5124f",
+    "adopt": true,
+    "workerName": "typescript-start-homepage-worker-daniel",
+    "dev": false,
+    "id": "a57ab6cc618794fa71854d2757206424d01c373c",
+    "environment": "production",
+    "createdAt": 1768606132115,
+    "updatedAt": 1768606132115
+  },
+  "props": {
+    "name": "typescript-start.danield9tqh.com",
+    "adopt": true,
+    "workerName": "typescript-start-homepage-worker-daniel",
+    "dev": false
+  }
+}

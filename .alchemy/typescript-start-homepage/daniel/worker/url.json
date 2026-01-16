@@ -1,0 +1,23 @@
+{
+  "kind": "cloudflare::WorkerSubdomain",
+  "id": "url",
+  "fqn": "typescript-start-homepage/daniel/worker/url",
+  "seq": 1,
+  "data": {},
+  "status": "created",
+  "output": {
+    "Symbol(alchemy::ResourceKind)": "cloudflare::WorkerSubdomain",
+    "Symbol(alchemy::ResourceID)": "url",
+    "Symbol(alchemy::ResourceFQN)": "typescript-start-homepage/daniel/worker/url",
+    "Symbol(alchemy::ResourceScope)": {
+      "@scope": null
+    },
+    "Symbol(alchemy::ResourceSeq)": 1,
+    "url": "https://typescript-start-homepage-worker-daniel.danield9tqh.workers.dev"
+  },
+  "props": {
+    "scriptName": "typescript-start-homepage-worker-daniel",
+    "retain": false,
+    "dev": false
+  }
+}

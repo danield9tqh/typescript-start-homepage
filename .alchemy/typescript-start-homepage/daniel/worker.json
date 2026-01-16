@@ -1,0 +1,157 @@
+{
+  "kind": "cloudflare::Worker",
+  "id": "worker",
+  "fqn": "typescript-start-homepage/daniel/worker",
+  "seq": 2,
+  "data": {},
+  "status": "created",
+  "output": {
+    "Symbol(alchemy::ResourceKind)": "cloudflare::Worker",
+    "Symbol(alchemy::ResourceID)": "worker",
+    "Symbol(alchemy::ResourceFQN)": "typescript-start-homepage/daniel/worker",
+    "Symbol(alchemy::ResourceScope)": {
+      "@scope": null
+    },
+    "Symbol(alchemy::ResourceSeq)": 2,
+    "entrypoint": "/Users/daniel/dev/personal/typescript-start-homepage/infra/index.ts",
+    "compatibility": "node",
+    "bindings": {
+      "DB": {
+        "Symbol(alchemy::ResourceKind)": "cloudflare::D1Database",
+        "Symbol(alchemy::ResourceID)": "db",
+        "Symbol(alchemy::ResourceFQN)": "typescript-start-homepage/daniel/db",
+        "Symbol(alchemy::ResourceScope)": {
+          "@scope": null
+        },
+        "Symbol(alchemy::ResourceSeq)": 0,
+        "type": "d1",
+        "id": "0776faf0-b4f8-45c2-b4d0-d4de84b25800",
+        "name": "typescript-start-homepage-db-daniel",
+        "dev": {
+          "id": "typescript-start-homepage-db-daniel",
+          "remote": false
+        },
+        "migrationsDir": "/Users/daniel/dev/personal/typescript-start-homepage/infra/migrations",
+        "migrationsTable": "d1_migrations",
+        "jurisdiction": "default"
+      },
+      "ASSETS": {
+        "type": "assets",
+        "path": "/Users/daniel/dev/personal/typescript-start-homepage/dist"
+      },
+      "BETTER_AUTH_SECRET": {
+        "@secret": {
+          "version": "v1",
+          "ciphertext": "k5wCjHeKNIYYqJm8yvqqosBJnvACX+qnwityvSrf8mvHqCgjBLO6c09nB98=",
+          "iv": "OfYC7tWU9sWZ2hMB",
+          "salt": "L8WoGBpHi8t5/AEiizx4qA==",
+          "tag": "eZV8Tyi4so0aLkVxS4FQtg=="
+        }
+      }
+    },
+    "domains": [
+      {
+        "Symbol(alchemy::ResourceKind)": "cloudflare::CustomDomain",
+        "Symbol(alchemy::ResourceID)": "typescript-start.danield9tqh.com",
+        "Symbol(alchemy::ResourceFQN)": "typescript-start-homepage/daniel/worker/typescript-start.danield9tqh.com",
+        "Symbol(alchemy::ResourceScope)": {
+          "@scope": null
+        },
+        "Symbol(alchemy::ResourceSeq)": 0,
+        "name": "typescript-start.danield9tqh.com",
+        "zoneId": "1f8feb2a1b158bd974b98d8943f5124f",
+        "adopt": true,
+        "workerName": "typescript-start-homepage-worker-daniel",
+        "dev": false,
+        "id": "a57ab6cc618794fa71854d2757206424d01c373c",
+        "environment": "production",
+        "createdAt": 1768606132115,
+        "updatedAt": 1768606132115
+      }
+    ],
+    "url": "https://typescript-start-homepage-worker-daniel.danield9tqh.workers.dev",
+    "adopt": true,
+    "assets": {
+      "not_found_handling": "single-page-application"
+    },
+    "observability": {
+      "enabled": true,
+      "headSamplingRate": 1,
+      "logs": {
+        "invocationLogs": true
+      }
+    },
+    "type": "service",
+    "id": "worker",
+    "name": "typescript-start-homepage-worker-daniel",
+    "cwd": "",
+    "compatibilityDate": "2026-01-03",
+    "compatibilityFlags": [
+      "nodejs_compat",
+      "nodejs_compat_populate_process_env"
+    ],
+    "format": "esm",
+    "createdAt": {
+      "@date": "2026-01-16T23:28:52.427Z"
+    },
+    "updatedAt": {
+      "@date": "2026-01-16T23:28:52.427Z"
+    },
+    "dev": {
+      "hasRemote": true
+    }
+  },
+  "props": {
+    "entrypoint": "/Users/daniel/dev/personal/typescript-start-homepage/infra/index.ts",
+    "compatibility": "node",
+    "bindings": {
+      "DB": {
+        "Symbol(alchemy::ResourceKind)": "cloudflare::D1Database",
+        "Symbol(alchemy::ResourceID)": "db",
+        "Symbol(alchemy::ResourceFQN)": "typescript-start-homepage/daniel/db",
+        "Symbol(alchemy::ResourceScope)": {
+          "@scope": null
+        },
+        "Symbol(alchemy::ResourceSeq)": 0,
+        "type": "d1",
+        "id": "0776faf0-b4f8-45c2-b4d0-d4de84b25800",
+        "name": "typescript-start-homepage-db-daniel",
+        "dev": {
+          "id": "typescript-start-homepage-db-daniel",
+          "remote": false
+        },
+        "migrationsDir": "/Users/daniel/dev/personal/typescript-start-homepage/infra/migrations",
+        "migrationsTable": "d1_migrations",
+        "jurisdiction": "default"
+      },
+      "ASSETS": {
+        "type": "assets",
+        "path": "/Users/daniel/dev/personal/typescript-start-homepage/dist"
+      },
+      "BETTER_AUTH_SECRET": {
+        "@secret": {
+          "version": "v1",
+          "ciphertext": "lxk9L6DHwdeLr8mhKNAMjM2yhhjvdNib6l5GKfW1DpY/PPfoSRXTVZLFVFw=",
+          "iv": "7nfPP/MSxpgV2l10",
+          "salt": "06PHN/L4MlAcs4O/+JPvpg==",
+          "tag": "D1HVcHxOZ0dSVe3LPR69dg=="
+        }
+      }
+    },
+    "domains": [
+      "typescript-start.danield9tqh.com"
+    ],
+    "url": true,
+    "adopt": true,
+    "assets": {
+      "not_found_handling": "single-page-application"
+    },
+    "observability": {
+      "enabled": true,
+      "headSamplingRate": 1,
+      "logs": {
+        "invocationLogs": true
+      }
+    }
+  }
+}

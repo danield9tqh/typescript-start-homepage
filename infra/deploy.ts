@@ -5,15 +5,12 @@ import { D1Database, Worker, Assets } from "alchemy/cloudflare";
 import { RandomString } from "alchemy/random";
 import pkg from "../package.json" assert { type: "json" };
 
-if (!process.env.CUSTOM_DOMAIN) {
-  console.error("ERROR: CUSTOM_DOMAIN environment variable is not set.");
-  process.exit(1);
-} else if (!process.env.ALCHEMY_PASSWORD) {
+if (!process.env.ALCHEMY_PASSWORD) {
   console.error("ERROR: ALCHEMY_PASSWORD environment variable is not set.");
   process.exit(1);
 }
 
-const customDomain = process.env.CUSTOM_DOMAIN;
+const customDomain = "typescript-start.danield9tqh.com";
 
 // Resolve paths
 const infraDir = import.meta.dir;
@@ -41,7 +38,7 @@ await Bun.build({
 // Generate migrations from schema
 console.log("🔄 Generating migrations from schema...");
 await $`drizzle-kit generate --dialect=sqlite --schema=./auth/db-schema.ts --out=./infra/migrations`.cwd(
-  rootDir
+  rootDir,
 );
 
 // Create D1 Database with migrations
