@@ -38,36 +38,76 @@ export function Home() {
         </p>
 
         <div style={styles.techLogos}>
-          <img
-            src="https://cdn.svgporn.com/logos/typescript-icon.svg"
-            alt="TypeScript"
-            style={styles.techLogo}
-          />
-          <img
-            src="https://cdn.svgporn.com/logos/bun.svg"
-            alt="Bun"
-            style={styles.techLogo}
-          />
-          <img
-            src="https://cdn.svgporn.com/logos/hono.svg"
-            alt="Hono"
-            style={styles.techLogo}
-          />
-          <img
-            src="https://cdn.svgporn.com/logos/react.svg"
-            alt="React"
-            style={styles.techLogo}
-          />
-          <img
-            src="https://cdn.svgporn.com/logos/cloudflare.svg"
-            alt="Cloudflare"
-            style={styles.techLogoWide}
-          />
-          <img
-            src="https://alchemy.run/_astro/alchemy-logo-light.BAkZH2YP.svg"
-            alt="Alchemy"
-            style={styles.techLogoWide}
-          />
+          <a href="https://www.typescriptlang.org/">
+            <img
+              src="https://cdn.svgporn.com/logos/typescript-icon.svg"
+              alt="TypeScript"
+              style={styles.techLogo}
+            />
+          </a>
+          <a href="https://bun.sh/">
+            <img
+              src="https://cdn.svgporn.com/logos/bun.svg"
+              alt="Bun"
+              style={styles.techLogo}
+            />
+          </a>
+          <a href="https://hono.dev/">
+            <img
+              src="https://cdn.svgporn.com/logos/hono.svg"
+              alt="Hono"
+              style={styles.techLogo}
+            />
+          </a>
+          <a href="https://react.dev/">
+            <img
+              src="https://cdn.svgporn.com/logos/react.svg"
+              alt="React"
+              style={styles.techLogo}
+            />
+          </a>
+          <a href="https://www.cloudflare.com/">
+            <img
+              src="https://cdn.svgporn.com/logos/cloudflare.svg"
+              alt="Cloudflare"
+              style={styles.techLogoWide}
+            />
+          </a>
+          <a href="https://alchemy.run/">
+            <img
+              src="https://alchemy.run/_astro/alchemy-logo-light.BAkZH2YP.svg"
+              alt="Alchemy"
+              style={styles.techLogoWide}
+            />
+          </a>
+          <a href="https://www.better-auth.com/">
+            <img
+              src="https://svgl.app/library/better-auth_dark.svg"
+              alt="Better Auth"
+              style={styles.techLogoWide}
+            />
+          </a>
+          <a href="https://zod.dev/">
+            <img
+              src="https://cdn.svgporn.com/logos/zod.svg"
+              alt="Zod"
+              style={styles.techLogo}
+            />
+          </a>
+          <a href="https://mui.com/">
+            <img
+              src="https://cdn.svgporn.com/logos/material-ui.svg"
+              alt="Material UI"
+              style={styles.techLogo}
+            />
+          </a>
+          <a href="https://tanstack.com/">
+            <img
+              src="https://svgl.app/library/tanstack.svg"
+              alt="TanStack"
+              style={styles.techLogo}
+            />
+          </a>
         </div>
       </main>
     </div>

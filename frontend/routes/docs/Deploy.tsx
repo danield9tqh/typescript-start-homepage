@@ -7,28 +7,32 @@ export function Deploy() {
       <p style={styles.subtitle}>Deploy your app to Cloudflare in minutes.</p>
 
       <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>Steps</h2>
-
         <p style={styles.text}>
-          1. Have a Cloudflare account with a domain name managed by Cloudflare
+          1. Have a Cloudflare account with a domain name{" "}
+          <a href="https://www.cloudflare.com/products/registrar/">
+            managed by Cloudflare
+          </a>
         </p>
 
-        <p style={styles.text}>2. Authenticate with Wrangler:</p>
+        <p style={styles.text}>2. Create an Alchemy profile</p>
         <div style={styles.codeBlock}>
-          <code style={styles.codeBlockText}>bunx wrangler login</code>
+          <code style={styles.codeBlockText}>bunx alchemy configure</code>
         </div>
 
-        <p style={styles.text}>
-          3. Set environment variables in <code style={styles.inlineCode}>.env</code>:
-        </p>
+        <p style={styles.text}>3. Login with Cloudflare</p>
         <div style={styles.codeBlock}>
           <code style={styles.codeBlockText}>
-            ALCHEMY_PASSWORD=your_password{"\n"}
-            CUSTOM_DOMAIN=your-domain.com
+            bunx alchemy login cloudflare
           </code>
         </div>
 
-        <p style={styles.text}>4. Deploy:</p>
+        <p style={styles.text}>
+          4. Set <code style={styles.inlineCode}>ALCHEMY_PASSWORD</code> and{" "}
+          <code style={styles.inlineCode}>CUSTOM_DOMAIN</code> in{" "}
+          <code style={styles.inlineCode}>.env</code>
+        </p>
+
+        <p style={styles.text}>5. Deploy</p>
         <div style={styles.codeBlock}>
           <code style={styles.codeBlockText}>bun run deploy</code>
         </div>

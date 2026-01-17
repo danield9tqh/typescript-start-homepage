@@ -4,10 +4,7 @@ const navItems = [
   { path: "/docs/getting-started", label: "Getting Started" },
   { path: "/docs/deploy", label: "Deploy" },
   { path: "/docs/why", label: "Why?" },
-  { path: "/docs/auth", label: "Auth" },
-  { path: "/docs/infrastructure", label: "Infrastructure" },
-  { path: "/docs/prioritizing", label: "Prioritizing" },
-  { path: "/docs/stack", label: "Stack" },
+  { path: "/docs/packages", label: "Packages" },
 ];
 
 export function DocsLayout() {
@@ -23,20 +20,21 @@ export function DocsLayout() {
 
       <div style={styles.layout}>
         <nav style={styles.nav}>
-          {navItems.map((item) => (
-            <a
-              key={item.path}
-              href={item.path}
-              style={{
-                ...styles.navLink,
-                ...(location.pathname === item.path
-                  ? styles.navLinkActive
-                  : {}),
-              }}
-            >
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            const isActive = location.pathname.startsWith(item.path);
+            return (
+              <a
+                key={item.path}
+                href={item.path}
+                style={{
+                  ...styles.navLink,
+                  ...(isActive ? styles.navLinkActive : {}),
+                }}
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </nav>
 
         <main style={styles.main}>

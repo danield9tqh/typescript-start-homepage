@@ -12,10 +12,15 @@ import { DocsLayout } from "./routes/docs/DocsLayout";
 import { Start } from "./routes/docs/Start";
 import { Deploy } from "./routes/docs/Deploy";
 import { Why } from "./routes/docs/Why";
-import { Auth } from "./routes/docs/Auth";
-import { Infrastructure } from "./routes/docs/Infrastructure";
-import { Prioritizing } from "./routes/docs/Prioritizing";
-import { Stack } from "./routes/docs/Stack";
+import { PackagesLayout } from "./routes/docs/packages/PackagesLayout";
+import { Bun } from "./routes/docs/packages/Bun";
+import { Hono } from "./routes/docs/packages/Hono";
+import { ReactTanstack } from "./routes/docs/packages/ReactTanstack";
+import { Zod } from "./routes/docs/packages/Zod";
+import { Drizzle } from "./routes/docs/packages/Drizzle";
+import { BetterAuth } from "./routes/docs/packages/BetterAuth";
+import { Alchemy } from "./routes/docs/packages/Alchemy";
+import { Cloudflare } from "./routes/docs/packages/Cloudflare";
 
 const rootRoute = createRootRoute({
   component: () => <Outlet />,
@@ -59,28 +64,66 @@ const whyRoute = createRoute({
   component: Why,
 });
 
-const authRoute = createRoute({
+const packagesRoute = createRoute({
   getParentRoute: () => docsRoute,
-  path: "/auth",
-  component: Auth,
+  path: "/packages",
+  component: PackagesLayout,
 });
 
-const infrastructureRoute = createRoute({
-  getParentRoute: () => docsRoute,
-  path: "/infrastructure",
-  component: Infrastructure,
+const packagesIndexRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/",
+  beforeLoad: () => {
+    throw redirect({ to: "/docs/packages/bun" });
+  },
 });
 
-const prioritizingRoute = createRoute({
-  getParentRoute: () => docsRoute,
-  path: "/prioritizing",
-  component: Prioritizing,
+const bunRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/bun",
+  component: Bun,
 });
 
-const stackRoute = createRoute({
-  getParentRoute: () => docsRoute,
-  path: "/stack",
-  component: Stack,
+const honoRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/hono",
+  component: Hono,
+});
+
+const reactRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/react",
+  component: ReactTanstack,
+});
+
+const zodRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/zod",
+  component: Zod,
+});
+
+const drizzleRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/drizzle",
+  component: Drizzle,
+});
+
+const betterAuthRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/better-auth",
+  component: BetterAuth,
+});
+
+const alchemyRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/alchemy",
+  component: Alchemy,
+});
+
+const cloudflareRoute = createRoute({
+  getParentRoute: () => packagesRoute,
+  path: "/cloudflare",
+  component: Cloudflare,
 });
 
 const routeTree = rootRoute.addChildren([
@@ -90,10 +133,17 @@ const routeTree = rootRoute.addChildren([
     gettingStartedRoute,
     deployRoute,
     whyRoute,
-    authRoute,
-    infrastructureRoute,
-    prioritizingRoute,
-    stackRoute,
+    packagesRoute.addChildren([
+      packagesIndexRoute,
+      bunRoute,
+      honoRoute,
+      reactRoute,
+      zodRoute,
+      drizzleRoute,
+      betterAuthRoute,
+      alchemyRoute,
+      cloudflareRoute,
+    ]),
   ]),
 ]);
 
