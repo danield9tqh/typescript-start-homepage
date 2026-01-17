@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "@tanstack/react-router";
+import { Outlet, useLocation, Link } from "@tanstack/react-router";
 
 const navItems = [
   { path: "/docs/getting-started", label: "Getting Started" },
@@ -13,9 +13,9 @@ export function DocsLayout() {
   return (
     <div style={styles.container}>
       <header style={{ ...styles.header, position: "relative", zIndex: 1 }}>
-        <a href="/" style={styles.homeLink}>
+        <Link to="/" style={styles.homeLink}>
           <span style={styles.backArrow}>&larr;</span> Home
-        </a>
+        </Link>
       </header>
 
       <div style={styles.layout}>
@@ -23,16 +23,16 @@ export function DocsLayout() {
           {navItems.map((item) => {
             const isActive = location.pathname.startsWith(item.path);
             return (
-              <a
+              <Link
                 key={item.path}
-                href={item.path}
+                to={item.path}
                 style={{
                   ...styles.navLink,
                   ...(isActive ? styles.navLinkActive : {}),
                 }}
               >
                 {item.label}
-              </a>
+              </Link>
             );
           })}
         </nav>

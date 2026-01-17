@@ -30,6 +30,7 @@ await Bun.build({
   sourcemap: "external",
   target: "browser",
   minify: true,
+  publicPath: "/",
   define: {
     "process.env.NODE_ENV": '"production"',
   },
