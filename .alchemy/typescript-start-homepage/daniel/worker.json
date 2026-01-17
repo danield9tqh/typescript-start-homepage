@@ -4,7 +4,7 @@
   "fqn": "typescript-start-homepage/daniel/worker",
   "seq": 2,
   "data": {},
-  "status": "created",
+  "status": "updated",
   "output": {
     "Symbol(alchemy::ResourceKind)": "cloudflare::Worker",
     "Symbol(alchemy::ResourceID)": "worker",
@@ -42,10 +42,10 @@
       "BETTER_AUTH_SECRET": {
         "@secret": {
           "version": "v1",
-          "ciphertext": "k5wCjHeKNIYYqJm8yvqqosBJnvACX+qnwityvSrf8mvHqCgjBLO6c09nB98=",
-          "iv": "OfYC7tWU9sWZ2hMB",
-          "salt": "L8WoGBpHi8t5/AEiizx4qA==",
-          "tag": "eZV8Tyi4so0aLkVxS4FQtg=="
+          "ciphertext": "HbDQYiPJ97qK3sEXAy9DTD+Z/hgXXZIV7PtyP7lQdgTeDTC7KVFw5eRvSVc=",
+          "iv": "u2G1+DCIdK0V67BO",
+          "salt": "2GW3EjbTO5YHwcajkT2CEQ==",
+          "tag": "zp+EAT5ryoCoz78nKujF4g=="
         }
       }
     },
@@ -95,7 +95,7 @@
       "@date": "2026-01-16T23:28:52.427Z"
     },
     "updatedAt": {
-      "@date": "2026-01-16T23:28:52.427Z"
+      "@date": "2026-01-17T00:12:23.964Z"
     },
     "dev": {
       "hasRemote": true
@@ -131,10 +131,10 @@
       "BETTER_AUTH_SECRET": {
         "@secret": {
           "version": "v1",
-          "ciphertext": "lxk9L6DHwdeLr8mhKNAMjM2yhhjvdNib6l5GKfW1DpY/PPfoSRXTVZLFVFw=",
-          "iv": "7nfPP/MSxpgV2l10",
-          "salt": "06PHN/L4MlAcs4O/+JPvpg==",
-          "tag": "D1HVcHxOZ0dSVe3LPR69dg=="
+          "ciphertext": "raGqpYAjuBs7iLkzmjGbOO/aQRwOMmOFmJEphA1WjaZwjJu/COhlTFfqpR8=",
+          "iv": "ejm4ZAAjVb9k6nal",
+          "salt": "B4D+eMRZIWBQNIOlPahI/Q==",
+          "tag": "2yqop97Ofe1p4AL4PGZ2rw=="
         }
       }
     },
