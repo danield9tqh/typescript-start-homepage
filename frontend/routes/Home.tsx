@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { Header } from "../components/Header";
 
 export function Home() {
   const [copied, setCopied] = useState(false);
-  const installCommand =
-    "bun create github.com/danield9tqh/bun-starter-app my-app";
+  const installCommand = "bun create danield9tqh/typescript-start my-app";
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(installCommand);
@@ -13,11 +13,7 @@ export function Home() {
 
   return (
     <div style={styles.container}>
-      <header style={{ ...styles.header, position: "relative", zIndex: 1 }}>
-        <a href="/docs" style={styles.docsLink}>
-          Docs
-        </a>
-      </header>
+      <Header />
 
       <main style={styles.main}>
         <h1 style={styles.title}>Typescript Start</h1>
@@ -121,80 +117,66 @@ const styles: Record<string, React.CSSProperties> = {
     flexDirection: "column",
     background: "#fdf6ed",
   },
-  header: {
-    display: "flex",
-    justifyContent: "flex-end",
-    padding: "24px 32px",
-  },
-  docsLink: {
-    color: "#666",
-    textDecoration: "none",
-    fontSize: "15px",
-    fontWeight: 500,
-    padding: "8px 16px",
-    borderRadius: "6px",
-    transition: "color 0.2s",
-  },
   main: {
     flex: 1,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    padding: "0 24px",
-    marginTop: "-80px",
+    padding: "0 26px",
+    marginTop: "-88px",
   },
   title: {
-    fontSize: "48px",
+    fontSize: "53px",
     fontWeight: 700,
     color: "rgb(248, 145, 37)",
-    marginBottom: "12px",
+    marginBottom: "13px",
     letterSpacing: "-1px",
   },
   subtitle: {
-    fontSize: "18px",
+    fontSize: "20px",
     color: "#666",
-    marginBottom: "48px",
+    marginBottom: "53px",
     textAlign: "center",
   },
   codeBlock: {
     background: "#1a1a1a",
-    padding: "16px 24px",
-    borderRadius: "8px",
+    padding: "18px 26px",
+    borderRadius: "9px",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
-    gap: "16px",
+    gap: "18px",
     transition: "transform 0.2s, box-shadow 0.2s",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+    boxShadow: "0 4px 13px rgba(0,0,0,0.1)",
   },
   code: {
     color: "#f8f8f8",
-    fontSize: "14px",
+    fontSize: "15px",
     fontFamily: "'SF Mono', 'Fira Code', 'Consolas', monospace",
   },
   copyHint: {
     color: "#888",
-    fontSize: "12px",
+    fontSize: "13px",
     whiteSpace: "nowrap",
   },
   tagline: {
-    marginTop: "48px",
-    fontSize: "14px",
+    marginTop: "53px",
+    fontSize: "15px",
     color: "#999",
   },
   techLogos: {
     display: "flex",
     alignItems: "center",
-    gap: "24px",
-    marginTop: "32px",
+    gap: "26px",
+    marginTop: "35px",
   },
   techLogo: {
-    height: "32px",
+    height: "35px",
     opacity: 0.7,
   },
   techLogoWide: {
-    height: "28px",
+    height: "31px",
     opacity: 0.7,
   },
 };
