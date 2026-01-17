@@ -42,10 +42,10 @@
       "BETTER_AUTH_SECRET": {
         "@secret": {
           "version": "v1",
-          "ciphertext": "ObfZo64gX/xOcMkeTa8UrvFEb7inuhuD9KbbU3ZsrA4qwDvK+zT7IeUCoTU=",
-          "iv": "up8uhhSuPF0sH7SJ",
-          "salt": "zOtVO0BULpcufK8zFoiIpw==",
-          "tag": "K8mje06nXg6cgxUOYr+v4Q=="
+          "ciphertext": "qnOrAUQMuyzx4AD3Y8C9bLh7dUHOIaiO8xphS3NDzmDiX+AJinp5JFANPOc=",
+          "iv": "gYtsyu0NpsxmJdnf",
+          "salt": "Psmp77lOTdbjFqCssCUY1Q==",
+          "tag": "w46n7wCmHvl0yYtcuI3SJg=="
         }
       }
     },
@@ -95,7 +95,7 @@
       "@date": "2026-01-16T23:28:52.427Z"
     },
     "updatedAt": {
-      "@date": "2026-01-17T01:11:06.046Z"
+      "@date": "2026-01-17T01:18:21.251Z"
     },
     "dev": {
       "hasRemote": true
@@ -131,10 +131,10 @@
       "BETTER_AUTH_SECRET": {
         "@secret": {
           "version": "v1",
-          "ciphertext": "RDNQxZ1x28zosGPAb8AdEEzVesjGomNXk316DtADi7fc6qNZCWdmdO3Dhks=",
-          "iv": "xonJRwxN4ZW1ro7C",
-          "salt": "JpM3ply3cf45DHTdEHxtIw==",
-          "tag": "mtM0a+0xR8hVZEfv8e2GOA=="
+          "ciphertext": "ArD7diaWk9Klv2cuMEt7bk9lgqAfgGjCBRMVvMuVaCS34CbXz2T7Xq5hbdE=",
+          "iv": "B1cYvgTPtLSeDioZ",
+          "salt": "bAfHqaQ0fZcEmze/c1hMSA==",
+          "tag": "5BByX9XbA0uAAG9NHrnV5Q=="
         }
       }
     },

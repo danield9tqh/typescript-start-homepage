@@ -15,11 +15,14 @@ export function Header() {
         </Link>
       )}
       <div style={styles.headerRight}>
-        <Link to="/docs" style={isDocs ? styles.docsLinkActive : styles.headerLink}>
+        <Link
+          to="/docs"
+          style={isDocs ? styles.docsLinkActive : styles.headerLink}
+        >
           Docs
         </Link>
         <a
-          href="https://github.com/danield9tqh/bun-starter-app"
+          href="https://github.com/danield9tqh/typescript-start"
           style={styles.headerLink}
           target="_blank"
           rel="noopener noreferrer"

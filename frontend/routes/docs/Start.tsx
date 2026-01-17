@@ -16,7 +16,7 @@ export function Start() {
         <h2 style={styles.sectionTitle}>Installation</h2>
         <div style={styles.codeBlock}>
           <code style={styles.codeBlockText}>
-            bun create github.com/danield9tqh/bun-starter-app{" "}
+            bun create danield9tqh/typescript-start{" "}
             <span style={{ color: "rgb(248, 145, 37)" }}>app-name</span>
           </code>
         </div>
