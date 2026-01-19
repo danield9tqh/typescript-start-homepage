@@ -9,7 +9,7 @@ import {
 import { Global, css } from "@emotion/react";
 import { Home } from "./routes/Home";
 import { DocsLayout } from "./routes/docs/DocsLayout";
-import { Start } from "./routes/docs/Start";
+import { Start } from "./routes/docs/GettingStarted";
 import { Deploy } from "./routes/docs/Deploy";
 import { Why } from "./routes/docs/Why";
 import { PackagesLayout } from "./routes/docs/packages/PackagesLayout";
