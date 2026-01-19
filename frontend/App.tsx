@@ -9,18 +9,18 @@ import {
 import { Global, css } from "@emotion/react";
 import { Home } from "./routes/Home";
 import { DocsLayout } from "./routes/docs/DocsLayout";
-import { Start } from "./routes/docs/GettingStarted";
-import { Deploy } from "./routes/docs";
-import { Why } from "./routes/docs/Why";
+import { Start, Deploy, Why } from "./routes/docs";
 import { PackagesLayout } from "./routes/docs/packages/PackagesLayout";
-import { Bun } from "./routes/docs/packages/Bun";
-import { Hono } from "./routes/docs/packages/Hono";
-import { ReactTanstack } from "./routes/docs/packages/ReactTanstack";
-import { Zod } from "./routes/docs/packages/Zod";
-import { Drizzle } from "./routes/docs/packages/Drizzle";
-import { BetterAuth } from "./routes/docs/packages/BetterAuth";
-import { Alchemy } from "./routes/docs/packages/Alchemy";
-import { Cloudflare } from "./routes/docs/packages/Cloudflare";
+import {
+  Bun,
+  Hono,
+  ReactTanstack,
+  Zod,
+  Drizzle,
+  BetterAuth,
+  Alchemy,
+  Cloudflare,
+} from "./routes/docs/packages";
 
 const rootRoute = createRootRoute({
   component: () => <Outlet />,

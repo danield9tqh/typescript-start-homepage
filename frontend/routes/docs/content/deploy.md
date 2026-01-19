@@ -33,5 +33,4 @@ An Alchemy profile for Cloudflare in your `~/.alchemy` folder. That's username +
 ```bash
 ALCHEMY_PASSWORD=_random_string_
 CUSTOM_DOMAIN=subdomain.example.com # whatever you set it to
-TEST=
 ```
