@@ -20,6 +20,13 @@ export const styles: Record<string, React.CSSProperties> = {
     color: "#111",
     marginBottom: "18px",
   },
+  sectionTitleLarge: {
+    fontSize: "35px",
+    fontWeight: 600,
+    color: "#111",
+    marginBottom: "18px",
+    marginTop: "44px",
+  },
   text: {
     fontSize: "18px",
     color: "#444",

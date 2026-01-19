@@ -1,3 +1,4 @@
+import { CodeBlock } from "../../components/CodeBlock";
 import { styles } from "./styles";
 
 export function Start() {
@@ -13,16 +14,11 @@ export function Start() {
       </p>
 
       <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>Installation</h2>
-        <div style={styles.codeBlock}>
-          <code style={styles.codeBlockText}>
-            bun create danield9tqh/typescript-start{" "}
-            <span style={{ color: "rgb(248, 145, 37)" }}>app-name</span>
-          </code>
-        </div>
-        <div style={styles.codeBlock}>
-          <code style={styles.codeBlockText}>bun dev</code>
-        </div>
+        <CodeBlock code="bun create danield9tqh/typescript-start app-name">
+          bun create danield9tqh/typescript-start{" "}
+          <span style={{ color: "rgb(248, 145, 37)" }}>app-name</span>
+        </CodeBlock>
+        <CodeBlock code="bun dev" />
       </section>
     </>
   );
