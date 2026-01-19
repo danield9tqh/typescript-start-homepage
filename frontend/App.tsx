@@ -10,8 +10,8 @@ import { Global, css } from "@emotion/react";
 import { Home } from "./routes/Home";
 import { DocsLayout } from "./routes/docs/DocsLayout";
 import { Start, Deploy, Why } from "./routes/docs";
-import { PackagesLayout } from "./routes/docs/packages/PackagesLayout";
 import {
+  PackagesLayout,
   Bun,
   Hono,
   ReactTanstack,
@@ -20,7 +20,7 @@ import {
   BetterAuth,
   Alchemy,
   Cloudflare,
-} from "./routes/docs/packages";
+} from "./routes/docs/PackagesLayout";
 
 const rootRoute = createRootRoute({
   component: () => <Outlet />,
