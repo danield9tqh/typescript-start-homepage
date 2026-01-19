@@ -1,6 +1,6 @@
 # Deploy
 
-Deploy your app to Cloudflare in minutes.
+## Deploy to Cloudflare
 
 ### Prerequisites
 
@@ -15,7 +15,7 @@ bun run infra/configure
 ### Deploy
 
 ```bash
-bun run deploy
+bun run infra/deploy
 ```
 
 ## What does this all do?
