@@ -29,6 +29,9 @@ export function MarkdownPage({ content }: MarkdownPageProps) {
           return <code style={styles.inlineCode}>{children}</code>;
         },
         pre: ({ children }) => <>{children}</>,
+        ul: ({ children }) => <ul style={styles.list}>{children}</ul>,
+        ol: ({ children }) => <ol style={styles.list}>{children}</ol>,
+        li: ({ children }) => <li style={styles.listItem}>{children}</li>,
       }}
     >
       {content}

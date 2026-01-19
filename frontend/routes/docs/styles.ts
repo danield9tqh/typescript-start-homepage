@@ -23,7 +23,7 @@ export const styles: Record<string, React.CSSProperties> = {
   sectionTitleLarge: {
     fontSize: "35px",
     fontWeight: 600,
-    color: "#111",
+    color: "rgb(248, 145, 37)",
     marginBottom: "18px",
     marginTop: "44px",
   },
@@ -67,7 +67,11 @@ export const styles: Record<string, React.CSSProperties> = {
     color: "#444",
     lineHeight: 1.8,
     paddingLeft: "26px",
-    marginBottom: "13px",
+    marginBottom: "18px",
+    marginTop: "0",
+  },
+  listItem: {
+    marginBottom: "8px",
   },
   stackGrid: {
     display: "flex",
